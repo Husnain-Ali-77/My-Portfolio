@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            width: 100%;
+        }
+
+        /* For desktop: */
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial,
+                sans-serif;
+            background-color: rgb(159, 203, 222);
+            color: white;
+        }
+
+        header {
+            background-color: rgb(75, 146, 177);
+            padding: 20px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #f0e13be5;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .Husnain_csection1 {
+            margin-right: 30px;
+            text-align: center;
+            /* Center align content */
+        }
+
+        .Husnain_csection1 img {
+
+            margin: 0 auto;
+            /* Center image horizontally */
+            border-radius: 45px;
+        }
+
+        .section2 {
+            text-align: center;
+        }
+
+        footer {
+            background-color: rgb(75, 146, 177);
+            text-align: center;
+            padding: 1px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .p1 {
+            color: rgb(35, 88, 111);
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            color: rgba(116, 41, 41, 0.822);
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+            animation: blink 1s infinite;
+        }
+
+        img {
+            border: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        /* Change border color when hovered */
+        img:hover {
+            border-color: #999;
+            /* Change to desired color */
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<header>
+    <a href="file:///C:/Users/husna/Desktop/A1_web/Main.html">Home</a>
+    <a href="file:///C:/Users/husna/Desktop/A1_web/About.html">About</a>
+    <a href="file:///C:/Users/husna/Desktop/A1_web/Education.html">Education</a>
+    <a href="file:///C:/Users/husna/Desktop/A1_web/Skills.html">Skills</a>
+    <a href="file:///C:/Users/husna/Desktop/A1_web/Contact.html">Contact</a>
+</header>
+
+<body>
+
+    <main>
+        <div>
+            <div class="Husnain_csection1" class="col-1">
+                <img src="Me.jpeg" alt="Profilepicture" height="280" width="230">
+            </div>
+            <div class="section2">
+                <h1>Husnain Ali</h1>
+                <p><b class="p1">i'm Web Developer.</b> I Design and Make User interfaces.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Portfolio. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: grid;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        header {
+            background-color: rgb(75, 146, 177);
+            padding: 20px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #f0e13be5;
+        }
+
+
+        footer {
+            background-color: rgb(75, 146, 177);
+            text-align: center;
+            padding: 1px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(159, 203, 222);
+            color: white;
+        }
+
+
+        #myimage {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid white;
+
+        }
+
+        img {
+            border: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        /* Change border color when hovered */
+        img:hover {
+            border-color: #999;
+            /* Change to desired color */
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .husnain_ceducation-title {
+            color: rgb(131, 99, 17);
+
+        }
+
+        .husnain_cduration {
+            font-size: 6;
+            margin-left: 70%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <a href="file:///C:/Users/husna/Desktop/A1_web/Main.html">Home</a>
+        <a href="file:///C:/Users/husna/Desktop/A1_web/About.html">About</a>
+        <a href="file:///C:/Users/husna/Desktop/A1_web/Education.html">Education</a>
+        <a href="file:///C:/Users/husna/Desktop/A1_web/Skills.html">Skills</a>
+        <a href="file:///C:/Users/husna/Desktop/A1_web/Contact.html">Contact</a>
+    </header>
+    <!-- Education Section -->
+    <br>
+    <br>
+    <br>
+
+    <div>
+        <!-- Image -->
+        <div>
+            <img src="education.jpg" alt="education" style="width: 100%; height:80%">
+        </div>
+        <br>
+        <div>
+            <div class="col-6">
+
+                <h2 class="husnain_ceducation-title" style="text-align: center;"> <u>Bachelors in Computer Science</u>
+                </h2>
+                <p style="color: rgb(35, 88, 111);">
+                    I am currently pursuing Bachelors in Computer Science from <b> <i> FAST University of Islamabad</i>
+                        (NUCES)
+                </p>
+                <p class="husnain_cduration"> <i>Duration (2021-25)</i></p>
+                <a href="file:///C:/Users/husna/Desktop/A1_web/bachelortranscript.html">View Bachelor's
+                    Transcript</a>
+            </div>
+            <div class="col-6">
+                <img src="fast.jpg" alt="fastname" width="100%" height="100%">
+            </div>
+        </div>
+        <div>
+            <div class="col-6">
+                <h2 class="husnain_ceducation-title" style="text-align: center;"> <u>Intermediate in Fsc
+                        (PRE-ENGINEERING)</u>
+                </h2>
+                <p style="color: rgb(35, 88, 111);">
+                    I had did Intermediate from <b><i>PUNJAB College of Gujrat (PGC) </i>
+                </p>
+                <p class="husnain_cduration"> <i>Duration (2019-21)</i></p>
+                <p>
+                    <a href=" file:///C:/Users/husna/Desktop/A1_web/intermediatecertificate.html">View Intermediate
+                        Final Certificate</a>
+                </p>
+            </div>
+            <div class="col-6">
+                <img src="pgc.png" alt="pgc" width="100%" height="80%">
+            </div>
+        </div>
+        <div>
+            <div class="col-6">
+                <h2 class="husnain_ceducation-title" style="text-align: center;"> <u>Matric (Computer-Science)</u>
+                </h2>
+                <p style="color: rgb(35, 88, 111)">
+                    I had did my Matriculation from <b>Govt. <i>School Number 2 from Jalal Pur Jattan (JPJ)</i>
+
+                        <p class="husnain_cduration"> <i>Duration (2017-19)</i></p>
+                </p>
+                <p>
+                    <a href="file:///C:/Users/husna/Desktop/A1_web/matriccertificate.html">View Intermediate
+                        Final Certificate</a>
+                </p>
+
+            </div>
+            <div class="col-6">
+                <img src="islamia.png" alt="pgc" width="90%" height="80%">
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+<footer>
+    <p>&copy; 2024 Your Portfolio. All Rights Reserved</p>
+</footer>
+
+</html>
